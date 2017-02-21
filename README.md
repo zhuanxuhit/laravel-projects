@@ -39,3 +39,21 @@
 
 3. 设置 phpstorm，可以查看文章[orm 系列 之 Eloquent使用1](http://www.jianshu.com/p/cbbc06159bde)中的前面部分
 
+   1. 安装ide-help`composer require barryvdh/laravel-ide-helper —dev`
+
+   2. 安装Model help `composer require doctrine/dbal —dev`
+
+   3. ```
+      Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
+      ```
+
+   4. `php artisan vendor:publish --provider="Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider" --tag=config`并且修改配置文件
+
+   5. php artisan ide-helper:generate
+
+   6. 将上述命令放置到composer.json中
+
+   7. 产生model注释：`php artisan ide-helper:models`
+
+   8. **產生PhpStorm Advanced Metadata** `php artisan ide-helper:meta`
+
