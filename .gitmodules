@@ -1,0 +1,3 @@
+[submodule "laravel-design-patterns"]
+	path = laravel-design-patterns
+	url = git@github.com:zhuanxuhit/laravel-design-patterns.git
